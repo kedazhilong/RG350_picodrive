@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Picodrive
 Comment=A megadrive/genesis emulator
-Exec=PicoDrive
+Exec=PicoDrive %f
 Terminal=false
 Type=Application
 StartupNotify=true

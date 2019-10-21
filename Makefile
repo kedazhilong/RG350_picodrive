@@ -59,7 +59,7 @@ $(TARGET).opk: $(TARGET)
 	$(RM) -rf .opk_data
 	cp -r platform/opendingux/data .opk_data
 	cp $< .opk_data/PicoDrive
-	$(STRIP) .opk_data/PicoDrive
+	#$(STRIP) .opk_data/PicoDrive
 	mksquashfs .opk_data $@ -all-root -noappend -no-exports -no-xattrs
 
 OBJS += platform/opendingux/inputmap.o

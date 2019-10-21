@@ -173,7 +173,11 @@ void plat_debug_cat(char *str)
 
 void emu_video_mode_change(int start_line, int line_count, int is_32cols)
 {
-	// clear whole screen in all buffers
+	// clear whole screen in all buffers	
+	memset32(g_screen_ptr, 0, g_screen_ppitch * g_screen_height * 2 / 4);
+	plat_video_flip();				
+	memset32(g_screen_ptr, 0, g_screen_ppitch * g_screen_height * 2 / 4);
+	plat_video_flip();				
 	memset32(g_screen_ptr, 0, g_screen_ppitch * g_screen_height * 2 / 4);
 }
 
