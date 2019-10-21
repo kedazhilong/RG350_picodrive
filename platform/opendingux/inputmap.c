@@ -54,5 +54,5 @@ const char * const in_sdl_key_names[SDLK_LAST] = {
 	[SDLK_KP_PERIOD] = "R3",
 	[SDLK_RETURN] = "START",
 	[SDLK_ESCAPE] = "SELECT",
-	[SDLK_POWER] = "POWER",
+	[SDLK_HOME] = "POWER",
 };
